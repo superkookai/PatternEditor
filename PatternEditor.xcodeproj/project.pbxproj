@@ -6,17 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EF1E2AF22DCB3B9A006A03DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1E2AED2DCB3B9A006A03DE /* Assets.xcassets */; };
+		EF1E2AF32DCB3B9A006A03DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1E2AEE2DCB3B9A006A03DE /* ContentView.swift */; };
+		EF1E2AF42DCB3B9A006A03DE /* PatternEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1E2AF02DCB3B9A006A03DE /* PatternEditorApp.swift */; };
+		EF1E2AF62DCB3DDA006A03DE /* PatternGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1E2AF52DCB3DDA006A03DE /* PatternGrid.swift */; };
+		EF1E2AF82DCB420E006A03DE /* PatternEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1E2AF72DCB420E006A03DE /* PatternEditorView.swift */; };
+		EF1E2AFB2DCB4644006A03DE /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1E2AFA2DCB4644006A03DE /* String+Ext.swift */; };
+		EF1E2AFD2DCB6F89006A03DE /* CodePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1E2AFC2DCB6F89006A03DE /* CodePreview.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EF1E2ADE2DCB3B91006A03DE /* PatternEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatternEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1E2AED2DCB3B9A006A03DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF1E2AEE2DCB3B9A006A03DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF1E2AEF2DCB3B9A006A03DE /* PatternEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PatternEditor.entitlements; sourceTree = "<group>"; };
+		EF1E2AF02DCB3B9A006A03DE /* PatternEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternEditorApp.swift; sourceTree = "<group>"; };
+		EF1E2AF52DCB3DDA006A03DE /* PatternGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternGrid.swift; sourceTree = "<group>"; };
+		EF1E2AF72DCB420E006A03DE /* PatternEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternEditorView.swift; sourceTree = "<group>"; };
+		EF1E2AFA2DCB4644006A03DE /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		EF1E2AFC2DCB6F89006A03DE /* CodePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		EF1E2AE02DCB3B91006A03DE /* PatternEditor */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PatternEditor;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EF1E2ADB2DCB3B91006A03DE /* Frameworks */ = {
@@ -32,7 +42,7 @@
 		EF1E2AD52DCB3B90006A03DE = {
 			isa = PBXGroup;
 			children = (
-				EF1E2AE02DCB3B91006A03DE /* PatternEditor */,
+				EF1E2AF12DCB3B9A006A03DE /* PatternEditor */,
 				EF1E2ADF2DCB3B91006A03DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +53,29 @@
 				EF1E2ADE2DCB3B91006A03DE /* PatternEditor.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EF1E2AF12DCB3B9A006A03DE /* PatternEditor */ = {
+			isa = PBXGroup;
+			children = (
+				EF1E2AF92DCB4611006A03DE /* Extension */,
+				EF1E2AEE2DCB3B9A006A03DE /* ContentView.swift */,
+				EF1E2AFC2DCB6F89006A03DE /* CodePreview.swift */,
+				EF1E2AF52DCB3DDA006A03DE /* PatternGrid.swift */,
+				EF1E2AF72DCB420E006A03DE /* PatternEditorView.swift */,
+				EF1E2AF02DCB3B9A006A03DE /* PatternEditorApp.swift */,
+				EF1E2AEF2DCB3B9A006A03DE /* PatternEditor.entitlements */,
+				EF1E2AED2DCB3B9A006A03DE /* Assets.xcassets */,
+			);
+			path = PatternEditor;
+			sourceTree = "<group>";
+		};
+		EF1E2AF92DCB4611006A03DE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF1E2AFA2DCB4644006A03DE /* String+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +92,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				EF1E2AE02DCB3B91006A03DE /* PatternEditor */,
 			);
 			name = PatternEditor;
 			packageProductDependencies = (
@@ -109,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1E2AF22DCB3B9A006A03DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1E2AF32DCB3B9A006A03DE /* ContentView.swift in Sources */,
+				EF1E2AF42DCB3B9A006A03DE /* PatternEditorApp.swift in Sources */,
+				EF1E2AF82DCB420E006A03DE /* PatternEditorView.swift in Sources */,
+				EF1E2AFD2DCB6F89006A03DE /* CodePreview.swift in Sources */,
+				EF1E2AFB2DCB4644006A03DE /* String+Ext.swift in Sources */,
+				EF1E2AF62DCB3DDA006A03DE /* PatternGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
